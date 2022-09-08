@@ -1,8 +1,34 @@
 <!DOCTYPE html>
 <html>
  <head>
-  <meta charset="utf-8" />
-<title>Вкладка</title>
+    <!--Большинство метатегов записываются с использованием непарного тега <meta>. 
+        Он принимает несколько основных атрибутов, которые помогают установить метаинформацию-->
+    <!--Для указания кодировки используетмя только один атрибут — charset,
+         значением которого выступает название кодировки. В 99% случаев это UTF-8. 
+         Если вы встретитесь с другой кодировкой, то, скорее всего,
+          об этом вам сообщат заранее-->
+        <meta charset="utf-8" />
+    <!--Атрибут name указывает на то, какой тип метаинформации описывается в теге, 
+        а description это значение атрибута, преводится как описание 
+        Атрибут content указывает на саму информацию  -->
+        <meta name="description" content="какая то страница">
+    <!--Как и с описанием, для установки ключевых слов используется два атрибута. 
+        В качестве значения атрибута name используется keywords. 
+        Сами ключевые слова перечисляются через запятую-->
+        <meta name="keywords" content="программирование, курсы, HTML, CSS">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+    
+    <!--Для того, чтобы установить такую иконку на страницу, используется тег <link>, 
+    у которого указываются два атрибута:
+        1. rel для указания контента
+        2. href для указания ссылки на иконку-->
+        <link rel="icon" href="ic192.ico" type="image/ico" sizes="192x192">
+        <link rel="icon" href="ic64.png" type="image/png" sizes="64x64">
+        <link rel="icon" href="ic32.png" type="image/png" sizes="32x32">
+        <link rel="icon" href="ic16.png" type="image/png" sizes="16x16">
+        <!--За заголовок во вкладке браузера отвечает парный тег <title>, 
+        внутри которого содержится название страницы.-->
+        <title>Вкладка</title>
   <style>
    article, aside, details, figcaption, figure, footer,header,
    hgroup, menu, nav, section { display: block; }
@@ -18,8 +44,8 @@
                 <li>Оглавление</li>
                 <li>Введение</li>
                     <ol>
-                        <li>Цели  создания приложения</li>
                         <li>Назначение приложения</li>
+                        <li>Цели  создания приложения</li>
                         <li>Определения, акронимы и сокращения</li>
                     </ol>
                 <li>Общее описание </li>
@@ -85,11 +111,48 @@
         
         <li>Введение</li>
     </ol>
-    <a href="http://netology.ru/">Нетология</a>
-    <a href="http://vk.com/landreil">мой вк</a>
+    <!--Вставка сслки на сайт с указанием названия ссылки-->
+    <p><a href="http://vk.com/landreil">мой вк</a></p>
+    <!--Вставака изображения с указанием url, названия изображения если ссылка не будет работать и разрешения изображения-->
+    <p><img src="https://sun9-24.userapi.com/impf/c836127/
+        v836127582/58a6a/mDAXNOSrmmU.jpg?size=604x604&quality=96&sign=6bc9fb23bc3de0fe15250059b95075c1&type=album" 
+        alt="картинка с вк" width="320" height="320"></p>
+    <!--Вставка изображения из корневой папки-->
+    <p><img src="11.jpg" alt="картинка с папки" width="320" height="320"></p>
+    <!-- Вставка аудио из корневой папки-->
+    <p><audio src="ага.mp3" controls></audio></p>
+    <!--Вставка видео из папки Vi-->
+    <p><video width="500" height="314" controls>
+        <source src="Vi/steel.mp4" type="video/mp4">
+    </video></p>
+    <!--другой вариант ссылки без множества ссылок на файл-->
+    <!--<video src="Vi/steel.mp4"  type="video/mp4" width="500" height="500" controls></video> -->
+    
+    <!--Вставка видео c youtube-->
+    <p><iframe width="500" height="314" src="https://www.youtube.com/embed/OtB2gwTHdh0"
+     title="Melodic Techno Mix 2022 / Anyma / RÜFÜS DU SOL / Monolink / Fideles / Space Motion / #14"
+     frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe></p>
+    <!--Вставка видео c vk-->
+     <p><iframe src="https://vk.com/video_ext.php?oid=-155827931&id=456239554&hash=e0070fa93cfb0a96" width="500" height="314"
+      frameborder="0" allowfullscreen="1" allow="autoplay; encrypted-media; fullscreen; picture-in-picture"></iframe></p>
 
 
-   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
    Данный раздел описывает какую информацию приложение собирает о пользователях и их поведении в статистических и аналитических целях 
    4. 
    1. Цели  создания приложения:
