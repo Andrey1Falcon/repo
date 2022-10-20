@@ -45,11 +45,121 @@
         внутри которого содержится название страницы.-->
     <title>Вкладка</title>
   <style>
+    :root {
+  --main-color: #000000;
+}
+
+
+  .margin {
+    margin: 2px ;
+    font-size: 12px;
+    color: #000000;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 2px;
+    
+  }
+   @media (max-width:1000px)
+    {
+  .card-hello {
+position: fixed;
+top: 10px;
+left: 5px;
+
+box-sizing: content-box;
+width: 150px;
+height: 150px;
+background-color: #d8e2e2;
+padding: 3px;
+color: #ffffff;
+margin: 3px;
+border: 1px solid #84899b;
+font-size: 12px;
+}    
+body {
+  position: relative;
+  left: 250px;
+}
+}
+
+
+
+.texts{
+   font: italic bold 44px Times-New Roman;
+   color: #2d23e6;
+}
+
+
+@font-face {
+  font-family: ComforterBrush-Regular; /* Гарнитура шрифта (мое дополнение (это название шрифта для обращения))*/
+  src: url(1234s.ttf); /* Путь к файлу со шрифтом */
+}
+
+h1 {
+font-family: ComforterBrush-Regular ;
+}
+
+
+p {
+  color: black;
+}
+
+.red {
+  color: red;
+}
+
+#blue {
+  color: blue;
+}
+
+.paragraph {
+  color: red;
+}
+
+.paragraph.color-primary {
+  color: blue;
+}
+.left {
+  text-align: left;
+}
+
+.center {
+  text-align: center;
+}
+
+.right {
+  text-align: right;
+}
+
+.justify {
+  text-align: justify;
+}
+.Razmer_texta {
+  font-size: 24px;
+}
    article, aside, details, figcaption, figure, footer,header,
    hgroup, menu, nav, section { display: block; }
   </style>
  </head>
+ <div class="card-hello">
+  <div class="margin">Первая Карточка </div>
+  <div class="margin">Вторая Карточка </div>
+  </div>
  <body>
+ 
+  
+</br>
+<h1>Прописной корявый шрифт</h1>
+</br>
+</br>
+  <p class="Razmer_texta texts">Размер текста 24 пикселя</p>
+
+</br>
+</br>
+</br>
+  <p class="left">Текст по левому краю</p>
+<p class="center">Текст по центру</p>
+<p class="right">Текст по правому краю</p>
+<p class="justify">Текст с выравниванием по ширине.</p>
 </br>
 </br>
 </br>
@@ -298,6 +408,23 @@
       frameborder="0" allowfullscreen="1" allow="autoplay; encrypted-media; fullscreen; 
       picture-in-picture"></iframe></p>
 
+    </br>
+  </br>
+  </br>
+  
+
+      <p id="blue" class="red">Текст с классом red и идентификатором blue</p>
+
+    </br>
+  </br>
+  </br>
+
+      <p class="paragraph color-primary">Параграф</p>
+<p class="paragraph">Параграф</p>
+<p class="paragraph color-primary">Параграф</p>
+</br>
+</br>
+</br>
 
 
    
