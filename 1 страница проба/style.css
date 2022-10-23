@@ -10,7 +10,6 @@ body{
     margin: 0;
     font-size: 14px;
     color: var(--main-color);
-  
 }
 /* == Backgraound ================================================*/
 .mask{
@@ -18,9 +17,10 @@ body{
     top:0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.612);
-    z-index: -2;
+    background-color: rgba(17, 18, 20, 0.967);
+    z-index: -4;
     position: fixed;
+    
 }   
 .vid{
     left: 0;
@@ -29,7 +29,7 @@ body{
     height: 100%;
     object-fit: cover;
     position: fixed;
-    z-index: -3;
+    z-index: -5;
 }
 .container{
     width : 100%;
@@ -43,39 +43,148 @@ body{
     left: 0;
     top: 0;
     width: 100%;
-    
 }
 .header__in{
     display: flex;
     justify-content:space-between;
-    border-bottom: 2px solid var(--main-color);
-    padding: 35px;
+    border-bottom: 1px solid var(--main-color);
+    padding: 25px;
     align-items: center;
 }
 .header__nav{
-    display: flex;
-}
-.header__nav__block{
-    box-sizing: border-box;
-    width: 150px;
-    height: 50px;
-    margin:  5px 5px;
+    transition:  color .15s linear;
+    transition: font-size .15s linear;
+    margin: 0;
+
+    
 }
 .header__nav__link{
+    width: 150px;
+    height: 50px;
     font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
+    font-size: 20px;
     color: var(--main-color);
-    justify-content:space-between;
     text-decoration: none;
     text-transform: uppercase;
     opacity: 0.85;
-    transition:  color .15s linear;
-    transition: font-size .15s linear;
-    
+    margin: 10px;
+    padding: 10px;
+    transition: opacity 0.15s linear;
+    transition: color 0.15s linear;
+}
+.header__nav__link:hover {
+    color: var(--hover-color);
+    opacity: 1;
+}
+/* == Intro ================================================*/
+h1{
+    font-size: 60px;
+    color: var(--main-color);
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    margin-left: 100px;
+}
+h2{
+    font-size: 40px;
+    color: var(--main-color);
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    margin-left: 100px;
+ 
+}
+/* == Progect ================================================*/
+.project__nav{
+    box-sizing: border-box;
+    display:flex;
+    flex-wrap: wrap;
+}
+.small__project__box{
+    position: relative;
+    box-sizing: border-box;
+    width: 260px;
+    height: 260px;
+    margin: 20px;
+}
+.small__project__box:hover .box__hover{
+    opacity: 1;
+}
+.box__hover{
+    position: relative;
+    width: 260px;
+    height: 230px;
+    color: var(--main-color);
+    font-size: 14px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(28, 41, 53, 0.833);
+    opacity: 0;
+    transition: opacity .15s linear;
 
 }
-.header__nav__link:hover{
-    color: var(--hover-color);
-   opacity: 1;
-   font-size: 18px;
+.box__image{
+    position: relative;
+    width: 260px;
+    height: 230px;
+}
+.img{
+    position: absolute;
+    object-fit: cover;
+    width: 260px;
+    height: 230px;
+}
+.box__name{
+    width: 100%;
+    height: 30px;
+    color: var(--main-color);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.111);
+}
+/* == Creater ================================================*/
+.creator{
+    position:  relative;
+    height: 560px;
+    margin: 20px;
+    display: flex;
+    justify-content:space-between;
+    
+}
+.photo{
+    position: relative;
+    width: 560px;
+    height: 560px;
+
+}
+.img__creator{
+    position: relative;
+    object-fit: cover;
+    width: 560px;
+    height: 560px;
+}
+.cretor__info{
+    position:  relative;
+    width: 100%;
+    margin: 30px;
+
+}
+.cretor__info__text{
+    color: var(--main-color);
+    font-size: 44px;
+    font-family: Raleway, sans-serif;
+}
+/* == Footer ================================================*/
+.footer{
+    border-top: 1px solid var(--main-color);
+
+
+}
+.footer__text{
+    font-size: 24px;
+    color: var(--main-color);
 }
